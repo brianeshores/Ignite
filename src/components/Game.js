@@ -7,13 +7,14 @@ import { Link } from "react-router-dom";
 import { smallImage } from "../util";
 
 const Game = ({ name, released, image, id, screenshots }) => {
+  const stringPathId = id.toString();
   const dispatch = useDispatch();
   const loadDetailsHandler = () => {
     document.body.style.overflow = "hidden";
     dispatch(loadDetail(id, screenshots));
   };
   return (
-    <StyledGame onClick={loadDetailsHandler}>
+    <StyledGame layoutId={stringPathId} onClick={loadDetailsHandler}>
       <Link to={`/game/${id}`}>
         <h3>{name}</h3>
         <p>{released}</p>
@@ -27,7 +28,7 @@ const StyledGame = styled(motion.div)`
   min-height: 30vh;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   overflow: hidden;
   img {
