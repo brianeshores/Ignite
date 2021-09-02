@@ -42,6 +42,10 @@ const GlobalStyles = createGlobalStyle`
   img{
     display: block;
   }
+  input{
+    font-weight: bold;
+    font-family: "Montsarat", sans-serif;
+  }
 `;
 
 export default GlobalStyles;
