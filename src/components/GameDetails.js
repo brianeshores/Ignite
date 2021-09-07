@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { smallImage } from "../util";
-
+// Import images
 import playstation from "../img/playstation.svg";
 import steam from "../img/steam.svg";
 import xbox from "../img/xbox.svg";
@@ -112,7 +112,7 @@ const GameDetails = ({ pathId }) => {
     </>
   );
 };
-
+// Styled components
 const CardShadow = styled(motion.div)`
   width: 100%;
   min-height: 100vh;

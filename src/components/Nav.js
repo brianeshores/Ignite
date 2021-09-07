@@ -35,7 +35,7 @@ const Nav = () => {
     </div>
   );
 };
-
+// styled components
 const StyledNav = styled(motion.nav)`
   padding: 3rem 5rem;
   text-align: center;
@@ -62,9 +62,10 @@ const Logo = styled(motion.div)`
   justify-content: center;
   padding: 1rem;
   cursor: pointer;
+  font-size: 2rem;
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
 `;
 export default Nav;

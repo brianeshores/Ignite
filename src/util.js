@@ -1,3 +1,4 @@
+// Change Url to fetch smaller images
 export const smallImage = (imagePath, size) => {
   if (imagePath) {
     const image = imagePath.match(/media\/screenshots/)

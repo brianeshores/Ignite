@@ -29,16 +29,20 @@ const currentDay = getCurrentDay();
 const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
-
+// Url partials
 const popularGames = `games?key=${process.env.REACT_APP_API}&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
 const upcomingGames = `games?key=${process.env.REACT_APP_API}&dates=${currentDate},${nextYear}&ordering=-added&page_size=10`;
 const newGames = `games?key=${process.env.REACT_APP_API}&dates=&${lastYear},${currentDate}&ordering=-released&page_size=10`;
-
+// Full URLs
 export const popularGamesUrl = () => `${base_url}${popularGames}`;
+
 export const upcomingGamesUrl = () => `${base_url}${upcomingGames}`;
+
 export const newGamesUrl = () => `${base_url}${newGames}`;
+
 export const gameDetailsUrl = (game_id) =>
   `${base_url}games/${game_id}.json?&key=${process.env.REACT_APP_API}`;
+
 export const gameScreenshotUrl = (game_id) =>
   `${base_url}games/${game_id}/screenshots?&.json?&key=${process.env.REACT_APP_API}`;
 

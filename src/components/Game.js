@@ -1,11 +1,14 @@
+// Import dependancies
 import React from "react";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+// Import styles and animations
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useDispatch } from "react-redux";
-import { loadDetail } from "../actions/detailsAction";
-import { Link } from "react-router-dom";
-import { smallImage } from "../util";
 import { popup } from "../animations";
+import { smallImage } from "../util";
+// import actions
+import { loadDetail } from "../actions/detailsAction";
 
 const Game = ({ name, released, image, id, screenshots }) => {
   const stringPathId = id.toString();
@@ -30,7 +33,7 @@ const Game = ({ name, released, image, id, screenshots }) => {
     </StyledGame>
   );
 };
-
+// styled components
 const StyledGame = styled(motion.div)`
   min-height: 30vh;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
