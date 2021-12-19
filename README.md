@@ -24,4 +24,4 @@ React, react-router, redux, styled-components, framer-animations
 
 ## <u style="color: orange">ScreenShots</u>
 
-![Gif](https://github.com/brianeshores/Ignite/blob/master/screenshots/Ignite.gif)
+![Gif](https://github.com/brianeshores/Ignite/blob/master/screenshots/Ignitehigh.gif)
