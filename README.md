@@ -24,6 +24,4 @@ React, react-router, redux, styled-components, framer-animations
 
 ## <u style="color: orange">ScreenShots</u>
 
-![homePage](https://user-images.githubusercontent.com/46970817/132355970-58340873-b364-4c19-b394-b63827071e3d.png)
-
-![gameDetails](https://user-images.githubusercontent.com/46970817/132355963-4a451095-2f76-4d5c-9a1b-cd27912c7725.png)
+![Gif](https://github.com/brianeshores/Ignite/tree/master/screenshots#:~:text=.%E2%80%8A.-,Ignite.gif,-screenshot%20added)
