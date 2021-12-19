@@ -1,3 +1,4 @@
+// initial state
 const initState = {
   game: { platforms: [] },
   screenshots: [],
